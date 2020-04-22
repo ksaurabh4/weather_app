@@ -1,5 +1,3 @@
-console.log('Client side JavaScript File');
-
 getWeather = (address) => {
   if (!address) {
     messageOne.classList.add('error');

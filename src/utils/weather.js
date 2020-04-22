@@ -9,8 +9,10 @@ const weather = (lat, long, callback) => {
       callback('Unable to get the Weather of given Location!', undefined);
     } else {
       callback(undefined, {
+        localTime: data.body.location.localtime,
         actualTemp: data.body.current.temperature,
         feelLikeTemp: data.body.current.feelslike,
+        humidity: data.body.current.humidity,
       });
     }
   });

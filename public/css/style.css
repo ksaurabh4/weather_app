@@ -1,0 +1,127 @@
+/**
+******Basic Setup**********
+**/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+body {
+  width: 940px;
+  margin: auto;
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header {
+  display: flex;
+  flex-direction: right;
+}
+
+h1 {
+  margin: 30px 0;
+}
+.main-content {
+  flex-grow: 1;
+  text-align: center;
+  min-height: 50vh;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+}
+form {
+  margin-top: 20px;
+}
+form > input {
+  height: 35px;
+  padding-left: 10px;
+}
+form > button,
+form > button:focus,
+form > button:active,
+form > button:visited {
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 15px;
+  border: 2px solid transparent;
+  color: #fff;
+  font-weight: 300;
+  background-color: #ff5523;
+  border-radius: 3px;
+  transition: border 0.5s;
+  outline: none;
+}
+.error {
+  color: #ff0000;
+}
+form > button:hover {
+  background-color: #fff;
+  color: #ff5523;
+  border: 2px solid #ff5523;
+}
+p,
+h2 {
+  margin-top: 20px;
+  padding-left: -5px;
+}
+
+.main-nav {
+  margin-top: 55px;
+  list-style: none;
+  margin-left: 200px;
+  float: right;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-right: 50px;
+  margin-left: 0;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  text-decoration: none;
+  color: rgb(14, 13, 13);
+  margin-left: 40px;
+  font-size: 90%;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #ff5523;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+footer p {
+  border-top: 2px solid #555;
+  color: rgb(110, 110, 110);
+  text-align: center;
+  margin-top: 20px;
+}

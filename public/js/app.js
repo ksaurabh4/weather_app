@@ -3,9 +3,7 @@ getWeather = (address) => {
     messageOne.classList.add('error');
     return (messageOne.textContent = 'Provide the Location!');
   }
-  fetch(
-    `http://localhost:3000/weather?address=${encodeURIComponent(address)}`
-  ).then((response) => {
+  fetch(`/weather?address=${encodeURIComponent(address)}`).then((response) => {
     response.json().then((data) => {
       if (data.error) {
         messageOne.classList.add('error');
